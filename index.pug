@@ -1,0 +1,39 @@
+doctype html
+html(class="no-js" lang="es")
+    head
+        meta(charset="utf-8")
+        title Summus Games
+        meta( name="description" content="Comunidad de desarrolladores de juegos")
+        link(href="./css/normalize.css" rel="stylesheet")
+        link(href="./css/styles.css" rel="stylesheet")
+        link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css", rel="stylesheet", integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT", crossorigin="anonymous")
+        link(href="https://cdn.jsdelivr.net/flexboxgrid/6.3.2/flexboxgrid.min.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+        meta( name="viewport" content="width=device-width, initial-scale=1")
+        script(src="./js/modernizr.js")
+    body
+        div(class="videocontainer")
+            video(autoplay=true loop=true width="1280" height="720" poster="./video/Snapshots/spacious.jpg")
+                source(src="./video/MP4/Spacious.mp4" typ="video/mp4")
+                source(src="./video/WEBM/Spacious.webm" typ="video/webm")
+        div(class="row fullheight middle-xs center-xs up relative")
+            div(class="col-xs-12")
+                div(class="box")
+                    img(src="./images/mods.png")
+                    h1(class="white lobster no-margin") Summus Games
+
+            nav(class="fixed top right navigation" id="navigation")
+                ul(class="list-inline")
+                    li
+                        a(href="./index.html") Gran Evento
+                    li
+                        a(href="./reto.html") Reto del Fundador
+                    li
+                        a(href="./roadmap.html") Road Map
+                    li
+                        a(href="./comunidad.html") Nuestra Comunidad
+                    li  
+                        a(href="./contacto.html" class="contact") Contáctanos
+                    
+
+
