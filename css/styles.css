@@ -138,11 +138,31 @@ html, body {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none; }
 
+#navlow li {
+  font-size: 1.2em; }
+
 .contact {
   border: 2px solid white;
   padding: 10px 10px; }
   .contact:hover {
     background-color: white; }
+
+#description ul {
+  margin: 0px; }
+
+#description.absolute {
+  bottom: 0px; }
+
+#description.fixed {
+  top: 0px; }
+
+.beauty {
+  color: white;
+  padding-top: 12px;
+  margin-top: 20px;
+  font-size: 2em; }
+  .beauty li {
+    list-style: none; }
 
 /* ==========================================================================
 
@@ -151,6 +171,12 @@ html, body {
    ========================================================================== */
 .fullheight {
   height: 100%; }
+
+.fullheightp {
+  height: 250%; }
+
+.fullwidth {
+  width: 100%; }
 
 .row {
   margin: 0; }
@@ -170,18 +196,44 @@ html, body {
 .white {
   color: white; }
 
+.black {
+  background-color: black; }
+
+.largepadding {
+  padding: 10px 15px; }
+
 .lobster {
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive; }
+
+.big {
   font-size: 5em; }
+
+.medium {
+  font-size: 2em; }
+
+.small {
+  font-size: 200em; }
 
 .no-margin {
   margin: 0px; }
+
+.addpaddingtop {
+  padding-top: 15rem; }
+
+.addpaddingtop2 {
+  padding-top: 5rem; }
+
+.addpaddingbot {
+  padding-bottom: 10rem; }
 
 .top {
   top: 2em; }
 
 .right {
   right: 5em; }
+
+.bottom {
+  bottom: 0px; }
 
 .lwhite li {
   list-style: none;
@@ -196,7 +248,7 @@ html, body {
 
  */
 .hidden {
-  display: none !important; }
+  display: none; }
 
 /*
 

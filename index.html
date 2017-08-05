@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/flexboxgrid/6.3.2/flexboxgrid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./js/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <div class="videocontainer">
@@ -22,7 +23,7 @@
     <div class="row fullheight middle-xs center-xs up relative">
       <div class="col-xs-12">
         <div class="box"><img src="./images/mods.png">
-          <h1 class="white lobster no-margin">Summus Games</h1>
+          <h1 class="white lobster no-margin big">Summus Games</h1>
         </div>
       </div>
       <nav class="fixed top right navigation" id="navigation">
@@ -31,9 +32,124 @@
           <li><a href="./reto.html">Reto del Fundador</a></li>
           <li><a href="./roadmap.html">Road Map</a></li>
           <li><a href="./comunidad.html">Nuestra Comunidad</a></li>
-          <li> <a class="contact" href="./contacto.html">Contáctanos</a></li>
+          <li><a href="./contacto.html">Contáctanos</a></li>
         </ul>
       </nav>
+      <div class="absolute largepadding fullwidth" id="description">
+        <div class="row middle-xs center-xs">
+          <div class="col-xs-7 col-sm-6">
+            <h1 class="lead white">Somos una comunidad para el desarrollo de videojuegos</h1>
+          </div>
+          <div class="col-xs hidden" id="navlow">
+            <div class="box">
+              <nav class="text-right navigation">
+                <ul class="list-inline">
+                  <li><a href="./index.html">Gran Evento</a></li>
+                  <li><a href="./reto.html">Reto del Fundador</a></li>
+                  <li><a href="./roadmap.html">Road Map</a></li>
+                  <li><a href="./comunidad.html">Nuestra Comunidad</a></li>
+                  <li><a href="./contacto.html">Contáctanos</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fullheight black">
+      <div class="row center-xs no-margin addpaddingtop">
+        <div class="col-xs-10 col-sm-8">
+          <h1 class="white addpaddingbot">Origen y Visión</h1>
+          <hr>
+          <p>
+            La industria de los videojuegos es cada vez más importante.
+            En Colombia hay una gran comunidad y queremos ayudar a fortalecer este gremio, conectándolo con gente de otras disciplinas que añadan valor.
+            No armamos todo desde cero.  Nos apoyamos en lo que ya existe.  
+            Creemos en la frase de Newton de “apoyarnos en hombros de gigantes”.  Nuestro objetivo no es sustituir ni competir con lo que ya hay, 
+            sino complementarlo y potenciar la comunidad creadora de juegos.
+          </p>
+          <h2 class="white">
+             Desarrollaremos múltiples actividades y una de ellas será una Gran Feria de Videojuegos, que hemos llamado <strong>Summus2018.</strong></h2>
+        </div>
+      </div>
+    </div>
+    <div class="fullheight black">
+      <div class="row center-xs no-margin addpaddingtop">
+        <div class="col-xs-10 col-sm-8">
+          <h1 class="white addpaddingbot">Cronograma</h1>
+        </div>
+      </div>
+    </div>
+    <div class="fullheightp black">
+      <div class="row center-xs no-margin">
+        <div class="col-xs-15 col-sm-13">
+          <h1 class="white addpaddingbot">Grandes Empresas</h1>
+          <h2 class="white">TIPOS DE EMPRESAS QUE BUSCAMOS</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-sm-8 addpaddingtop2">
+          <h1 class="white text-center">LÍDERES GLOBALES</h1>
+        </div>
+        <div class="col-xs-5 col-sm-3 addpaddingtop2">
+          <ul class="beauty">
+            <li>Unity</li>
+            <li>Unreal</li>
+            <li>Wwise</li>
+            <li>Ubisoft</li>
+            <li>Microsoft</li>
+            <li>EA</li>
+          </ul>
+        </div>
+        <div class="col-xs-10 col-sm-8 addpaddingtop2">
+          <h1 class="white text-center">LÍDERES NACIONALES</h1>
+        </div>
+        <div class="col-xs-5 col-sm-3 addpaddingtop2">
+          <ul class="beauty">
+            <li>Efecto Studios</li>
+            <li>Teravision</li>
+            <li>Brainz</li>
+            <li>Cocodrilo Dog</li>
+            <li>Colombia Games</li>
+          </ul>
+        </div>
+        <div class="col-xs-10 col-sm-8 addpaddingtop2">
+          <h1 class="white text-center">ACADEMIA</h1>
+        </div>
+        <div class="col-xs-5 col-sm-3 addpaddingtop2">
+          <ul class="beauty">
+            <li>SAE Institute</li>
+            <li>Bosque</li>
+            <li>Tadeo</li>
+            <li>UTP</li>
+            <li>Konrad</li>
+          </ul>
+        </div>
+        <div class="col-xs-10 col-sm-8 addpaddingtop2">
+          <h1 class="white text-center">EMPRESAS DE LA REGIÓN</h1>
+          <h2 class="white text-center lead">Ajenas al sector de los videojuegos.</h2>
+        </div>
+        <div class="col-xs-5 col-sm-3 addpaddingtop2">
+          <ul class="beauty">
+            <li>Suzuki</li>
+            <li>Frisby</li>
+            <li>Luker</li>
+            <li>Argos</li>
+            <li>Carvajal</li>
+            <li>Bancolombia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fullheight black">
+      <div class="row center-xs no-margin addpaddingtop">
+        <div class="col-xs-10 col-sm-8">
+          <h1 class="white addpaddingbot text-center">Reglas</h1>
+        </div>
+        <div class="col-xs-10 col-sm-8">
+          <h1 class="white text-center">por definir</h1>
+        </div>
+      </div>
     </div>
   </body>
 </html>

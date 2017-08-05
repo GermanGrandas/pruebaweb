@@ -10,30 +10,113 @@ html(class="no-js" lang="es")
         link(href="https://cdn.jsdelivr.net/flexboxgrid/6.3.2/flexboxgrid.min.css" rel="stylesheet")
         link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
         meta( name="viewport" content="width=device-width, initial-scale=1")
-        script(src="./js/modernizr.js")
+        script(src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+        script(src="./js/main.js")
     body
         div(class="videocontainer")
             video(autoplay=true loop=true width="1280" height="720" poster="./video/Snapshots/spacious.jpg")
-                source(src="./video/MP4/Spacious.mp4" typ="video/mp4")
-                source(src="./video/WEBM/Spacious.webm" typ="video/webm")
-        div(class="row fullheight middle-xs center-xs up relative")
-            div(class="col-xs-12")
-                div(class="box")
+                source(src="./video/MP4/spacious.mp4" typ="video/mp4")
+                source(src="./video/WEBM/spacious.webm" typ="video/webm")
+        .row.fullheight.middle-xs.center-xs.up.relative
+            .col-xs-12
+                .box
                     img(src="./images/mods.png")
-                    h1(class="white lobster no-margin") Summus Games
+                    h1.white.lobster.no-margin.big Summus Games
 
-            nav(class="fixed top right navigation" id="navigation")
-                ul(class="list-inline")
-                    li
-                        a(href="./index.html") Gran Evento
-                    li
-                        a(href="./reto.html") Reto del Fundador
-                    li
-                        a(href="./roadmap.html") Road Map
-                    li
-                        a(href="./comunidad.html") Nuestra Comunidad
-                    li  
-                        a(href="./contacto.html" class="contact") Contáctanos
+            nav.fixed.top.right.navigation#navigation
+                -var menu={"Gran Evento":"./index.html" ,"Reto del Fundador":"./reto.html","Road Map":"./roadmap.html","Nuestra Comunidad":"./comunidad.html","Contáctanos":"./contacto.html"}
+                    ul(class="list-inline")
+                        each link,item in menu
+                            li
+                                a(href=link)=item
+            .absolute.largepadding.fullwidth#description
+                .row.middle-xs.center-xs
+                    .col-xs-7.col-sm-6
+                        h1.lead.white Somos una comunidad para el desarrollo de videojuegos
+                    .col-xs.hidden#navlow
+                        .box
+                            nav.text-right.navigation
+                                ul.list-inline
+                                    each link,item in menu
+                                        li
+                                            a(href=link)=item
+        .fullheight.black
+            .row.center-xs.no-margin.addpaddingtop
+                .col-xs-10.col-sm-8
+                    h1.white.addpaddingbot Origen y Visión
+                    hr
+                    p
+                        | La industria de los videojuegos es cada vez más importante.
+                        | En Colombia hay una gran comunidad y queremos ayudar a fortalecer este gremio, conectándolo con gente de otras disciplinas que añadan valor.
+                        | No armamos todo desde cero.  Nos apoyamos en lo que ya existe.  
+                        |Creemos en la frase de Newton de “apoyarnos en hombros de gigantes”.  Nuestro objetivo no es sustituir ni competir con lo que ya hay, 
+                        |sino complementarlo y potenciar la comunidad creadora de juegos.
+                    h2.white 
+                        |Desarrollaremos múltiples actividades y una de ellas será una Gran Feria de Videojuegos, que hemos llamado 
+                        strong Summus2018.
+                    
+        .fullheight.black
+            .row.center-xs.no-margin.addpaddingtop
+                .col-xs-10.col-sm-8
+                    h1.white.addpaddingbot Cronograma
+
+        .fullheightp.black
+            .row.center-xs.no-margin
+                .col-xs-15.col-sm-13
+                    h1.white.addpaddingbot Grandes Empresas
+                    h2.white TIPOS DE EMPRESAS QUE BUSCAMOS
+            .row
+                .col-xs-10.col-sm-8.addpaddingtop2
+                    h1.white.text-center LÍDERES GLOBALES
+                .col-xs-5.col-sm-3.addpaddingtop2
+                    ul.beauty
+                        li Unity
+                        li Unreal
+                        li Wwise
+                        li Ubisoft
+                        li Microsoft
+                        li EA
+                .col-xs-10.col-sm-8.addpaddingtop2
+                    h1.white.text-center LÍDERES NACIONALES
+                .col-xs-5.col-sm-3.addpaddingtop2
+                    ul.beauty
+                        li Efecto Studios
+                        li Teravision
+                        li Brainz
+                        li Cocodrilo Dog
+                        li Colombia Games
+                .col-xs-10.col-sm-8.addpaddingtop2
+                    h1.white.text-center ACADEMIA
+                .col-xs-5.col-sm-3.addpaddingtop2
+                    ul.beauty
+                        li SAE Institute
+                        li Bosque
+                        li Tadeo
+                        li UTP
+                        li Konrad
+                .col-xs-10.col-sm-8.addpaddingtop2
+                    h1.white.text-center EMPRESAS DE LA REGIÓN
+                    h2.white.text-center.lead Ajenas al sector de los videojuegos.
+                .col-xs-5.col-sm-3.addpaddingtop2
+                    ul.beauty
+                        li Suzuki
+                        li Frisby
+                        li Luker
+                        li Argos
+                        li Carvajal
+                        li Bancolombia
+        .fullheight.black
+            .row.center-xs.no-margin.addpaddingtop
+                .col-xs-10.col-sm-8
+                    h1.white.addpaddingbot.text-center Reglas
+                .col-xs-10.col-sm-8
+                    h1.white.text-center por definir
+
+
+
+        
+
+
                     
 
 
