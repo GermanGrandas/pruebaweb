@@ -218,7 +218,7 @@ textarea {
         color:white;
         cursor: pointer;
         &:hover{
-        color:rgba(black,0.7);
+        color:rgba(white,0.7);
         text-decoration: none;
         }
     }
@@ -258,14 +258,53 @@ textarea {
     }
 }
 
+.logo{
+    width: 100px;
+}
+.logo2{
+    width: 40px;
+    margin: 30px 50px;
+
+}
+#menuOpener{
+    display : none;
+}
+#MmenuOpener{
+    display : none;
+}
 
 
 
 
-
-
-
-
+table{
+    position: auto;
+    width : auto;
+    height :auto;
+    text-align : center;
+    border: 2px solid black;
+    font-weight: bold;
+    letter-spacing: 0.02pt;
+    word-spacing: 0.01pt; 
+    left: 10%;
+  	margin: 20px auto;
+    padding : 40rem;
+  	overflow: scroll;
+   
+  }
+.hora{
+    font-family : Roboto,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    height : 10px;}
+.evento{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    height : 60px;}
+.meses{
+    height : 50px;
+    letter-spacing: 2pt}
+.separador { height : 100px;}
 
 
 
@@ -323,14 +362,31 @@ textarea {
 .white{
     color: white;
 }
+.blackfont{
+    color:black;
+}
+
 .black{
     background-color: black;
 }
+.whiteback{
+    background-color: white;
+}
+.burly{
+    background-color: BurlyWood;
+}
+.antique{
+    background-color: antiquewhite;
+}
+
 .largepadding{
     padding: 10px 15px;
 }
 .lobster{
     font-family: 'Lobster', cursive;
+}
+.bungee{
+    font-family: 'Bungee' , cursive , sans-serif;
 }
 .big{
     font-size: 5em;
@@ -354,7 +410,9 @@ textarea {
 .addpaddingbot{
     padding-bottom: 10rem;
 }
-
+.addpaddingbot2{
+    padding-bottom: 1.4em;
+}
 .top{
     top: 2em;
 }
@@ -372,6 +430,10 @@ textarea {
     a{
         color:white;
     }
+}
+
+.addmargintop{
+    margin-top: 30%;
 }
 /*
 
@@ -538,8 +600,83 @@ textarea {
    Modify as content requires.
 
    ========================================================================== */
+@media only screen and (max-width : 500px){
+    #responsive-nav{
+        ul{
+            top:90px;
+        }
+    }
+}
+@media only screen and (max-height :600px){
+    .crono{
+        margin-top:-5%;
+    }
+    .res{
+        font-size: 1.5em;
+    }
+    .rules{
+        margin-top:35%;
+    }
+}
+@media only screen and (max-width : 960px){
+    .logo{
+        max-height: 90%;
+        height: auto;
 
-
+    }
+    #navigation{
+        ul{
+            position: absolute;
+            width: 100;
+            font-size: 1.5em;
+            top:95px;
+            background-color: #222;
+            left : 0px;
+            text-align: center;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 0.4s;
+            &.active{
+                max-height: 80vh;
+            }
+        }
+        li{
+            display: block;
+            margin-top:1em;
+            padding: 10px 15px;
+           
+        }
+    }
+    #menuOpener{
+        display : block;
+    }
+    #MmenuOpener{
+        display:block;
+    }
+    #responsive-nav{
+        ul{
+            position: absolute;
+            width: 100%;
+            font-size: 1.5em;
+            top:95px;
+            background-color: #222;
+            left : 0px;
+            text-align: center;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 0.4s;
+            &.active{
+                max-height: 80vh;
+            }
+        }
+        li{
+            display: block;
+            margin-top:1em;
+            padding: 10px 15px;
+           
+        }
+    }
+}
 
 @media only screen and (min-width: 35em) {
 

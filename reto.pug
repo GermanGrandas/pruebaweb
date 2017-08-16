@@ -1,0 +1,42 @@
+doctype html
+html(class="no-js" lang="es")
+    head
+        meta(charset="utf-8")
+        title Summus Games
+        meta( name="description" content="Comunidad de desarrolladores de juegos")
+        link(href="./css/normalize.css" rel="stylesheet")
+        link(href="./css/styles.css" rel="stylesheet")
+        link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css", rel="stylesheet", integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT", crossorigin="anonymous")
+        link(href="https://cdn.jsdelivr.net/flexboxgrid/6.3.2/flexboxgrid.min.css" rel="stylesheet")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bungee")
+        meta( name="viewport" content="width=device-width, initial-scale=1")
+        script(src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+        script(src="./js/modernizr-2.8.3.min.js")
+        script(src="./js/main.js")
+        -window.jQuery || document.write("<script src='./js/jquery-3.2.1.min.js'><\/script>")
+    
+    body
+        .black.fullwidth.up.relative
+            img(src="./images/mods.png" class="logo2")
+            h1.white.lobster.no-margin.medium.addpaddingbot2 Summus Games
+            nav.fixed.top.right.navigation.black#navigation
+                    i.glyphicon.glyphicon-menu-hamburger.white.glyphicon-remove#MmenuOpener
+                    -var menu={"Gran Evento":"./index.html" ,"Reto del Fundador":"./reto.html","Road Map":"./roadmap.html","Nuestra Comunidad":"./comunidad.html","Contáctanos":"./contacto.html"}
+                        ul(class="list-inline")
+                            each link,item in menu
+                                li
+                                    a(href=link)=item
+            .absolute.largepadding.fullwidth#description
+                .row.middle-xs.center-xs
+                    .col-xs.hidden#navlow
+                        .box
+                            nav.text-right.navigation#responsive-nav
+                                i.glyphicon.glyphicon-menu-hamburger.white.glyphicon-remove#menuOpener
+                                ul.list-inline
+                                    each link,item in menu
+                                        li
+                                            a(href=link)=item
+        .antique
+            .row.center-xs.no-margin.addpaddingtop.addmargintop
+                    .col-xs-10.col-sm-8
+                        h1.blackfont.lobster.no-margin.big SOMOS FUNDADORES

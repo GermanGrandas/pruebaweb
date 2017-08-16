@@ -5,6 +5,14 @@
     $(document).ready(function(){
         $("#navlow").removeClass("hidden");
         $("#navlow").slideUp(0);
+        $("#menuOpener").on("click",function() {
+           $("#responsive-nav ul").toggleClass("active");
+           $(this).toggleClass("glyphicon-menu-hamburger")
+        });
+        $("#MmenuOpener").on("click",function() {
+            $("#navigation ul").toggleClass("active");
+           $(this).toggleClass("glyphicon-menu-hamburger")
+        });
     });
 
 

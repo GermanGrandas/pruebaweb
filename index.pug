@@ -8,22 +8,26 @@ html(class="no-js" lang="es")
         link(href="./css/styles.css" rel="stylesheet")
         link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css", rel="stylesheet", integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT", crossorigin="anonymous")
         link(href="https://cdn.jsdelivr.net/flexboxgrid/6.3.2/flexboxgrid.min.css" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bungee")
         meta( name="viewport" content="width=device-width, initial-scale=1")
         script(src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+        script(src="./js/modernizr-2.8.3.min.js")
         script(src="./js/main.js")
+        -window.jQuery || document.write("<script src='./js/jquery-3.2.1.min.js'><\/script>")
+         
     body
         div(class="videocontainer")
-            video(autoplay=true loop=true width="1280" height="720" poster="./video/Snapshots/spacious.jpg")
-                source(src="./video/MP4/spacious.mp4" typ="video/mp4")
-                source(src="./video/WEBM/spacious.webm" typ="video/webm")
+            video(autoplay=true loop=true width="1280" height="720" poster="./video/Snapshots/coding.jpg")
+                source(src="./video/MP4/coding.mp4" typ="video/mp4")
+                source(src="./video/WEBM/coding.webm" typ="video/webm")
         .row.fullheight.middle-xs.center-xs.up.relative
             .col-xs-12
                 .box
-                    img(src="./images/mods.png")
+                    img(src="./images/mods.png" class="logo")
                     h1.white.lobster.no-margin.big Summus Games
 
             nav.fixed.top.right.navigation#navigation
+                i.glyphicon.glyphicon-menu-hamburger.white.glyphicon-remove#MmenuOpener
                 -var menu={"Gran Evento":"./index.html" ,"Reto del Fundador":"./reto.html","Road Map":"./roadmap.html","Nuestra Comunidad":"./comunidad.html","Contáctanos":"./contacto.html"}
                     ul(class="list-inline")
                         each link,item in menu
@@ -35,7 +39,8 @@ html(class="no-js" lang="es")
                         h1.lead.white Somos una comunidad para el desarrollo de videojuegos
                     .col-xs.hidden#navlow
                         .box
-                            nav.text-right.navigation
+                            nav.text-right.navigation#responsive-nav
+                                i.glyphicon.glyphicon-menu-hamburger.white.glyphicon-remove#menuOpener
                                 ul.list-inline
                                     each link,item in menu
                                         li
@@ -51,19 +56,74 @@ html(class="no-js" lang="es")
                         | No armamos todo desde cero.  Nos apoyamos en lo que ya existe.  
                         |Creemos en la frase de Newton de “apoyarnos en hombros de gigantes”.  Nuestro objetivo no es sustituir ni competir con lo que ya hay, 
                         |sino complementarlo y potenciar la comunidad creadora de juegos.
-                    h2.white 
+                    h2.white.res 
                         |Desarrollaremos múltiples actividades y una de ellas será una Gran Feria de Videojuegos, que hemos llamado 
                         strong Summus2018.
                     
         .fullheight.black
             .row.center-xs.no-margin.addpaddingtop
                 .col-xs-10.col-sm-8
-                    h1.white.addpaddingbot Cronograma
+                    h1.white.addpaddingbot.crono Cronograma
+                div(style="overflow-x:auto;")
+                    table.tabla
+                        thead
+                            tr.meses
+                                th HORA
+                                th DÍA 1
+                                th DÍA 2
+                                th DÍA 3
+                                th DÍA 4
+                                th DÍA 5
+                                th DÍA 6
+
+                        tbody
+                            tr
+                                td.hora 8:00
+                                td.evento Charla inaugural
+                                td(class="evento" colspan="3" rowspan="11") Creación del videojuego en inmersión
+                                td(class="evento" rowspan="9") Creación del videojuego en inmersión 
+                                td(class="evento" rowspan="9") Libre
+                            tr
+                                td.hora 9:00
+                                td.evento Asignación de equipos
+  
+                            tr
+                                td.hora 10:00
+                                td(class="evento" rowspan="2") Charla de etapas a superar y uso del tiempo
+                            tr
+                                td.hora 11:00
+                            tr
+                                <td class="hora">12:00</td>
+                                <td class="evento" rowspan="2">Almuerzo</td>
+                           
+                            tr
+                                <td class="hora">13:00</td>
+                            
+                            tr
+                                <td class="hora">14:00</td>
+                                <td class="evento" rowspan="2">Capacitación de herramientas según patrocinio</td>
+                            
+                            tr
+                                <td class="hora">15:00</td>
+                            
+                            tr
+                                <td class="hora">16:00</td>
+                                <td class="evento" rowspan="2">Asignación de espacios</td>
+                            
+                            tr
+                                <td class="hora">17:00</td>
+                                <td class="evento" rowspan="2">Entrega del ejecutable en .exe y .apk con toda la iconografía</td>
+                                <td class="evento" rowspan="2">Premiación, competencia de juego conocido, competencia de juego ganador</td>
+                            
+                            tr
+                                td.hora 18:00
+                                td.evento Comienzo de la competencia
+                            
 
         .fullheightp.black
             .row.center-xs.no-margin
                 .col-xs-15.col-sm-13
-                    h1.white.addpaddingbot Grandes Empresas
+                    h1.white.addpaddingbot.addmargintop Grandes Empresas
                     h2.white TIPOS DE EMPRESAS QUE BUSCAMOS
             .row
                 .col-xs-10.col-sm-8.addpaddingtop2
@@ -108,10 +168,10 @@ html(class="no-js" lang="es")
         .fullheight.black
             .row.center-xs.no-margin.addpaddingtop
                 .col-xs-10.col-sm-8
-                    h1.white.addpaddingbot.text-center Reglas
+                    h1.white.addpaddingbot.text-center.rules.addmargintop Reglas
                 .col-xs-10.col-sm-8
                     h1.white.text-center por definir
-
+        
 
 
         
