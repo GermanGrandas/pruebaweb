@@ -13,7 +13,7 @@ html(class="no-js" lang="es")
         script(src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
         script(src="./js/modernizr-2.8.3.min.js")
         script(src="./js/main.js")
-        -window.jQuery || document.write("<script src='./js/jquery-3.2.1.min.js'><\/script>")
+            -window.jQuery || document.write("<script src='./js/jquery-3.2.1.min.js'><\/script>")
     
     body
         .black.fullwidth.up.relative
@@ -27,18 +27,50 @@ html(class="no-js" lang="es")
                             each link,item in menu
                                 li
                                     a(href=link)=item
-            
         .black.fullheight2
-            .row.center-xs.no-margin
-                    .col-xs-10.col-sm-8
-                        h1.white.bungee.no-margin.big.addmargintop2 RETO DEL FUNDADOR
-                        h2.white.no-margin.medium.addmargintop3 Nuestro rol: 
-                            strong SOMOS FUNDADORES
-                        p.white.addmargintop3.medium
-                            | Es un reto importante, nuevo para la mayoría de nosotros.
-                            | No hay cargos, ni sueldos, ni horarios. 
-                            | Nadie nos da las órdenes o el plan; debemos armarlo.
-                        img(src="./images/map.png" class="addmargintop3")
-                        p.white.addmargintop3.medium
-                            |El camino no está trazado, ni el mapa completo; hay que ir descubriendo cómo llegar a nuestra meta.
-                            |Nuestra tarea es como la de quien empieza un juego de Civilization.  Al principio conoce poco y el mundo es oscuro.  A medida que camina hacia lo desconocido, va encontrando posibilidades y lecciones nuevas.
+            div(style="overflow-x:auto;")
+                table.tabla
+                    tr
+                        th(class="tg-hgcj",colspan="7") 2017
+                    tr.meses
+                        td Junio
+                        td Julio
+                        td Agosto
+                        td Septiembre
+                        td Octubre
+                        td Noviembre
+                        td Diciembre
+                    tr.eventos
+                        td 
+                        td Meet & Greet Pereira
+                        td Simulacro del evento
+                        td Colombia 4.0
+                        td 
+                        td Semana del ingeniero
+                        td 
+                        td
+                    tr.eventos
+                        td
+                        td 
+                        td
+                        td
+                        td
+                        td Conferencia Hadron Games
+                        td
+                    th.separador
+                    th(class="tg-hgcj" colspan="7") 2018
+                    tr class = "meses">
+	                    td Enero
+	                    td Febrero
+	                    td Marzo
+	                    td Abril
+	                    td Mayo
+	                    td Junio
+                    </tr>
+                    <tr class = "eventos">
+                        td Evento Virtual Summus 
+                        td Posible Evento Virtual Hadron Games
+                        td 
+                        td Evento corporativo con patrocinio específico
+                        td 
+                        td Summus 2018

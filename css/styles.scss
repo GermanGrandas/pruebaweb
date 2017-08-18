@@ -288,7 +288,8 @@ table{
     left: 10%;
   	margin: 20px auto;
     padding : 40rem;
-  	overflow: scroll;
+    overflow: auto;
+    color : white;
    
   }
 .hora{
@@ -340,6 +341,9 @@ table{
 .fullheightp{
     height: 250%;
 }
+.fullheight2{
+    height: 150%;
+}
 .fullwidth{
     width: 100%;
 }
@@ -361,6 +365,9 @@ table{
 }
 .white{
     color: white;
+}
+.white2{
+    color:rgba(white,0.8);
 }
 .blackfont{
     color:black;
@@ -393,7 +400,7 @@ table{
 }
 
 .medium{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .small{
     font-size: 200em;
@@ -412,6 +419,11 @@ table{
 }
 .addpaddingbot2{
     padding-bottom: 1.4em;
+}
+.addpaddingright{
+    padding-right: 1em;}
+.addpaddingleft{
+    padding-left: 1rem;
 }
 .top{
     top: 2em;
@@ -433,7 +445,16 @@ table{
 }
 
 .addmargintop{
-    margin-top: 30%;
+    margin-top: 40%;
+}
+.addmargintop2{
+    margin-top: 20%;
+}
+.addmargintop3{
+    margin-top: 5%;
+}
+.addmarginbot{
+    margin-bottom: 20%;
 }
 /*
 
